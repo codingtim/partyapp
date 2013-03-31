@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="be.tim.partyapp"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="15"/>
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher"
+                 android:name="be.tim.partyapp.PartyAppApplication"
+                 android:theme="@android:style/Theme.Holo.Light">
+        <activity android:name="MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ScanActivity"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+            </intent-filter>
+            <meta-data
+                    android:name="android.nfc.action.TECH_DISCOVERED"
+                    android:resource="@xml/filter_nfc"/>
+        </activity>
+
+        <activity android:name=".PersonOverviewActivity"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true"
+                  android:launchMode="singleTop"/>
+
+        <activity android:name=".AddPersonActivity"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true"
+                  android:launchMode="singleTop"/>
+
+    </application>
+</manifest>

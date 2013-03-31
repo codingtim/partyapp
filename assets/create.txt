@@ -1,0 +1,2 @@
+create table PEOPLE (_id integer primary key autoincrement, name text not null, nfcid text not null);
+create table CONSUMPTION (_id integer primary key autoincrement, nfcid text not null, type text not null, mytimestamp text not null);
