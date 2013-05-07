@@ -5,37 +5,9 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
                   android:layout_height="wrap_content" android:layout_gravity="left|center_vertical"
-                  android:id="@+id/linearLayout">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nfc Id"
-                  android:id="@+id/textView1" android:layout_gravity="left|center_vertical" android:singleLine="false"
-                  android:paddingRight="15dip"/>
-        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editNfcId"
-                  android:layout_gravity="center|right" android:inputType="textPersonName" android:singleLine="true"
-                  android:hint="nfc id" android:editable="false"/>
+                  android:id="@+id/btnLayout">
+
     </LinearLayout>
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_gravity="left|center_vertical">
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:id="@+id/textName" android:layout_gravity="left|center_vertical" android:paddingRight="15dip"/>
-        <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/editName"
-                android:layout_gravity="center|right"
-                android:inputType="textPersonName"
-                android:singleLine="true"
-                android:hint="Name" android:editable="true"/>
-    </LinearLayout>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save "
-            android:id="@+id/btnSave" android:layout_gravity="right|center_vertical"/>
 </LinearLayout>

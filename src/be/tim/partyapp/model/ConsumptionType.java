@@ -1,11 +1,25 @@
 package be.tim.partyapp.model;
 
-/**
- * Created with IntelliJ IDEA.
- * User: tim
- * Date: 07/05/13
- * Time: 19:38
- * To change this template use File | Settings | File Templates.
- */
-public class ConsumptionType {
+public enum ConsumptionType {
+
+    BEER("bier"),
+    MALIBU("malibu"),
+    COLA("cola"),
+    RUM("rum"),
+    VODKA("vodka"),
+    BREEZER("breezer"),
+    PASSOA("passoa"),
+    PISSANG("pissang"),
+    BOSWANDELING("boswandeling"),
+    GP("gp");
+
+    private String name;
+
+    private ConsumptionType(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

@@ -41,5 +41,10 @@
                   android:noHistory="true"
                   android:launchMode="singleTop"/>
 
+        <activity android:name=".AddConsumptionActivity"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true"
+                  android:launchMode="singleTop"/>
+
     </application>
 </manifest>
